@@ -13,14 +13,11 @@ ui <- fluidPage(
     titlePanel("Giraffe Populations"),
     
     # Background image
-    setBackgroundImage(src = "giraffe-skin-print-pattern.jpg"),
+    # setBackgroundImage(src = "giraffe-skin-print-pattern.jpg"),
     
     # Background image with transparency. Problem here is that it makes the app
     # title transparent too.
     # img(src = "giraffe-skin-print-pattern.jpg"),
-    
-    # CSS for leaflet map. Haven't figured out how to code this in style.css
-    tags$style(type = "text/css", "#map {height: calc(100vh - 140px) !important;}"),
 
     # Sidebar with controls
     sidebarLayout(

@@ -1,15 +1,39 @@
 /* CSS */
 
-/* Map widget is 100% the height of the viewport (vh), minus 140px
-DO I NEED !important? */
-
-img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.4;
+/* Select by tag h2 */
+h2 {
+    color: black;
 }
 
-h1 {
-    color: black;
+/* Select class .help-block
+.help-block {
+    color: red;
+}
+*/
+
+/* Select id #map. Height is calculated as 100% of the height of the viewport (vh), minus 140px */
+#map {
+    height: calc(100vh - 140px) !important;
+}
+
+/* This implements a transparent background imaage without making the title text transparent too */
+body {
+  position: relative;
+}
+body:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url("giraffe-skin-print-pattern.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.container-fluid {
+  position: relative;
 }
