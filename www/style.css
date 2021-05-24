@@ -1,11 +1,11 @@
 /* CSS for giraffe map app */
 
-/* Select by tag h2. Increase font size. */
+/* Select by type h2. Increase font size. */
 h2 {
     font-size: 2.5em;
 }
 
-/* Select id #map. Height is calculated as 100% of the height of the viewport (vh), minus 140px */
+/* Select by id #map. Height is calculated as 100% of the height of the viewport (vh), minus 140px */
 #map {
     height: calc(100vh - 140px) !important;
 }
@@ -32,7 +32,7 @@ body:before {
   position: relative;
 }
 
-/* Select class .help-block
+/* Select by class .help-block
 .help-block {
     color: red;
 }
