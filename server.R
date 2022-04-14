@@ -4,6 +4,7 @@
 
 # Read in data
 df <- read_xlsx("Giraffe_all_Jan2021.xlsx") %>%
+# df <- read_xlsx("Giraffe_all_April2022.xlsx") %>%
     
     # Convert "generic" and "Hybrid" to "Generic"
     mutate(UDFSubspecies = if_else(UDFSubspecies %in% c("generic", "Hybrid"),
