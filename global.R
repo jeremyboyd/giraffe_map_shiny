@@ -1,3 +1,7 @@
+# TODO: Figure out how to automatically read in data from Google or GitHub or
+# somewhere. See code below for Google sheets. But doesn't seem to work when
+# served as a Polished app.
+
 # global.R 
 library(shiny)
 library(shinyWidgets)
@@ -22,4 +26,4 @@ polished::polished_config(
 # gs4_deauth()
 
 # Authorize using token stored in secrets
-gs4_auth(cache = "secrets", email = "asputnam@gmail.com")
+# gs4_auth(cache = "secrets", email = "asputnam@gmail.com")
