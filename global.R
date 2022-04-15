@@ -12,3 +12,14 @@ polished::polished_config(
     app_name = "giraffe_map_shiny",
     api_key = "v1GDJ310gbQGvLFOboOmpD3HPAP4FHtZS0"
 )
+
+# This code does a manual authorization for Google and specifies that the token
+# will be stored in the secrets folder in the project directory. Once the token
+# is obtained authorization should be automatic.
+# options(gargle_oauth_cache = "secrets")
+# gs4_auth()
+# list.files("secrets")
+# gs4_deauth()
+
+# Authorize using token stored in secrets
+gs4_auth(cache = "secrets", email = "asputnam@gmail.com")
