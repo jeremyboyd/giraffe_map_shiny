@@ -7,3 +7,4 @@
 polished_deploy_code.R
 giraffe_map_shiny.Rproj
 .DS_Store
+secrets
