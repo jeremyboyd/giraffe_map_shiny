@@ -2,18 +2,7 @@
 # Description: Shiny app that allows users to interact with a map of giraffe
 # populations.
 
-# This code does a manual authorization and specifies that the token will be
-# stored in the .secrets folder in the project directory. Once the token is
-# obtained authorization should be automatic.
-# options(gargle_oauth_cache = ".secrets")
-# gs4_auth()
-# list.files(".secrets/")
-# gs4_deauth()
-
-# Authorize using token stored in .secrets
-gs4_auth(cache = ".secrets", email = "kenyonboyd@gmail.com")
-
-# Read in data
+# Read data from Google sheet
 df <- read_sheet("https://docs.google.com/spreadsheets/d/1yIqBeBze5G6kvroQ6w0iH2GPlH2nK88Hhx19w9XJI7s/edit#gid=0") %>%
     
     # Convert "generic" and "Hybrid" to "Generic"
