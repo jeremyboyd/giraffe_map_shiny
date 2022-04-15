@@ -3,8 +3,11 @@
 # populations.
 
 # Read data from Google sheet
-df <- read_sheet("https://docs.google.com/spreadsheets/d/1yIqBeBze5G6kvroQ6w0iH2GPlH2nK88Hhx19w9XJI7s/edit#gid=0") %>%
-    
+# df <- read_sheet("https://docs.google.com/spreadsheets/d/1yIqBeBze5G6kvroQ6w0iH2GPlH2nK88Hhx19w9XJI7s/edit#gid=0") %>%
+
+# Read from excel    
+df <- read_xlsx("Giraffe_all_April2022.xlsx") %>%
+        
     # Convert "generic" and "Hybrid" to "Generic"
     mutate(UDFSubspecies = if_else(UDFSubspecies %in% c("generic", "Hybrid"),
                                    "Generic", UDFSubspecies)) %>%
